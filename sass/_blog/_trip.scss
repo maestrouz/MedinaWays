@@ -1,0 +1,193 @@
+.trip {
+  display: flex;
+  width: 1515px;
+  height: 700px;
+  cursor: url("/img/cursor1.png"), auto;
+
+  .trip_planners {
+    margin-left: 85px;
+    width: 27%;
+    h2 {
+      margin-top: 220px;
+      color: #172432;
+      font-family: "Playfair Display", serif;
+      font-size: 64px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+    p {
+      margin-top: 32px;
+      color: #767e86;
+      font-family: "Rubik", sans-serif;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+    .view {
+      margin-top: 50px;
+      margin-left: 80px;
+      width: 186px;
+      height: 61px;
+      border-radius: 12px;
+      background: #172432;
+      color: #fff;
+      font-family: "Rubik", sans-serif;
+      font-size: 18px;
+      font-weight: 400;
+      border: none;
+      cursor: url("/img/click.png"), auto;
+    }
+    .view:hover {
+      background: #ff7757;
+      cursor: url("/img/click.png"), auto;
+    }
+  }
+  .trip_card {
+    position: relative;
+    padding-left: 80px;
+    width: 70%;
+    height: 80%;
+    display: flex;
+    margin-top: 50px;
+    column-gap: 30px;
+    .card_1 {
+      img {
+        margin-top: 170px;
+        position: absolute;
+        z-index: 5;
+        transition: ease-in-out 650ms;
+        cursor: url("/img/click.png"), auto;
+      }
+      img:hover {
+        margin-top: -1px;
+        transition: 1s;
+      }
+      .card_1_info {
+        margin-top: 405px;
+        z-index: 2;
+        .city {
+          display: flex;
+          justify-content: space-between;
+          h4 {
+            margin-top: 20px;
+            color: #172432;
+            font-family: "Rubik", sans-serif;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 400;
+            text-transform: uppercase;
+          }
+          p {
+            margin-top: 20px;
+            color: #172432;
+            font-family: "Rubik", sans-serif;
+            font-size: 18px;
+            font-weight: 400;
+            line-height: normal;
+          }
+        }
+        h3 {
+          margin-top: 12px;
+          color: #172432;
+          font-family: "Playfair Display", serif;
+          font-size: 28px;
+          font-weight: 600;
+          line-height: normal;
+        }
+        .days {
+          z-index: 3;
+          display: flex;
+          justify-content: space-between;
+          img {
+            z-index: 3;
+            margin-top: 12px;
+          }
+          p {
+            margin-left: 200px;
+            margin-top: 15px;
+            color: #172432;
+            font-family: "Rubik", sans-serif;
+            font-size: 18px;
+            font-weight: 400;
+            line-height: normal;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .trip {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 110px;
+    img{
+      width: 200px;
+      margin-left: -50px;
+    }
+    .trip_planners {
+      h2 {
+        width: 300px;
+        color: #172432;
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        margin-left: -50px;
+      }
+      .linee {
+        margin-left: -50px;
+        width: 231px;
+      }
+      p {
+        width: 300px;
+        height: 105px;
+        color: #767e86;
+        font-family: Rubik;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        margin-left: -50px;
+      }
+      .view {
+        margin-left: -50px;
+      }
+    }
+    .trip_card {
+      display: flex;
+      flex-direction: column;
+      gap: 50px;
+      margin-left: -50px;
+      // margin-top: -50px;
+      img {
+        width: 300px;
+        height: 320px;
+        margin-left: -5px;
+      }
+      .card_1 {
+        .card_1_info {
+          .city {
+            display: flex;
+            width: 280px;
+            margin-top: -80px;
+          }
+          h3 {
+            width: 220px;
+          }
+          .days {
+            width: 300px;
+            img {
+              width: 150px;
+              height: 25px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

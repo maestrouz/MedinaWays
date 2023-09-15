@@ -1,0 +1,139 @@
+.popular {
+  position: relative;
+  width: 1515px;
+  height: 1106px;
+  border: 1px solid #fff;
+  cursor: url('/img/cursor1.png'), auto;
+
+
+  h2 {
+    margin-top: 140px;
+    margin-left: 85px;
+    color: #172432;
+    font-family: "Playfair Display", serif;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .line1 {
+    margin-left: 85px;
+  }
+  p {
+    margin-top: 32px;
+    margin-left: 85px;
+    color: #767e86;
+    font-family: "Rubik", sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  .left_btn {
+    position: absolute;
+    top: 250px;
+    right: 222px;
+    width: 66px;
+    height: 66px;
+    padding: 20px 23px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+    border-radius: 12px;
+    border: none;
+    background: #172432;
+    cursor: url('/img/click.png'), auto;
+  }
+  .left_btn:hover {
+    background: #ff7757;
+  }
+  .right_btn {
+    position: absolute;
+    top: 250px;
+    right: 122px;
+    width: 66px;
+    height: 66px;
+    padding: 20px 23px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+    border-radius: 12px;
+    border: none;
+    background: #172432;
+    cursor: url('/img/click.png'), auto;
+  }
+  .right_btn:hover {
+    background: #ff7757;
+  }
+  .card_image {
+    display: flex;
+    width: 100%;
+    padding-left: 85px;
+    column-gap: 22px;
+    img {
+      margin-top: 100px;
+      width: 397px;
+      height: 561px;
+    }
+  }
+}
+
+
+@media screen and (max-width: 360px){
+  .popular{
+    width: 100%;
+    margin-top: 110px;
+    h2{
+      margin-left: 30px;
+      width: 300px;
+      height: 106px;
+      color: #172432;
+      font-family: Playfair Display;
+      font-size: 40px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }          
+    .line1{
+      margin-left: 30px;
+      width: 230px;
+    }
+    p{
+      width: 300px;
+      height: 63px;
+      color: #767E86;
+      font-family: Rubik;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      margin-left: 30px;
+    }
+    .bg1{
+      margin-left: -55px;
+    }
+    .bg{
+      display: none;
+    }
+    .card_image{
+      display: block;
+    }
+    .card_image img{
+      display: flex;
+      row-gap: 900px;
+      margin-top: 30px;
+      margin-left: -55px;
+      width: 300px;
+      height: 340px;
+    }
+    .left_btn{
+      display: none;
+      margin-top: 500px;
+    }
+    .right_btn{
+      margin-top: 500px;
+      display: none;
+    }
+  }
+}

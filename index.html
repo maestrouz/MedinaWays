@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MedinaWays</title>
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/dropdown.css" />
+    <link rel="stylesheet" href="./css/timer.css" />
+    <link rel="shortcut icon" href="img/logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  <body>
+    <header class="container header">
+      
+      <div class="main" id="main_time">
+        <div class="vid">
+            <video id="myvideo"  class="video">
+                <source src="Introducing_Dynamic_Island_on_iPhone_14_Pro_Apple_WuEH265pUy4_137.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+       <div class="txt">
+        <div class="num">
+            <p id="days">00</p>
+            <span>days</span>
+        </div>
+        <div class="num">
+            <p id="hours">00</p>
+            <span>hours</span>
+        </div>
+        <div class="num">
+            <p id="minutes">00</p>
+            <span>minutes</span>
+        </div>
+        <div class="num">
+            <p id="seconds">00</p>
+            <span>seconds</span>
+        </div>
+        <button class="close_btn" onclick="yopish()">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+       </div>
+    </div>
+      <div class="header_bg">
+        <nav>
+          <div class="nav_logo">
+            <a href="#"><img src="./img/Logo.png" alt="logo"/><h2>MedinaWays</h2></a>
+          </div>
+          <div class="nav_list">
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Explore</a></li>
+              <li><a href="#">Travel</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Pricing</a></li>
+            </ul>
+            <a class="login" href="./web/log.html">Login</a>
+            <button class="sign_up" onclick="sign()">Sign up</button>
+          </div>
+        </nav>
+        <h1>
+          Start your unforgettable <br />
+          journey with us.
+        </h1>
+        <p>The best travel for your jouney begins now</p>
+
+        <div class="content">
+          <div class="container_drp">
+            <select id="countryDropdown">
+                <option value="Dubai">Dubai</option>
+                <option value="Makkah">Makkah</option>
+                <option value="New York">New York</option>
+                <option value="Korea">Korea</option>
+                <option value="Japan">Japan</option>
+                <option value="London">London</option>
+                <option value="Vietnam">Vietnam</option>
+                <option value="Uzbekistan">Uzbekistan</option>
+            </select>
+            <div id="popup" class="popup">
+              <b class="popup-text"></b>
+          </div>
+          </div>
+          <div class="content-input">
+            <input type="date" id="check_in">
+            <label class="check_in" for="" check_in>Check in</label>
+          </div>
+          <div class="content-input">
+            <input type="date" id="check_out"/>
+            <label class="check_in" for="" check_in>Check Out</label>
+          </div>
+          <button class="book_now" onclick="checkTicket()">
+            Buy <br />
+            Now <span><img src="img/Arrow 1.png" alt="arrow" /></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- section 1 -->
+      <section class="container popular">
+        <h2>Popular Destinations</h2>
+        <img class="line1" src="img/Line 1.png" alt="line" />
+        <p>
+          Most popular destinations around the world, from historical places to
+          natural wonders.
+        </p>
+
+        <button class="left_btn">
+          <img src="img/Vector.png" alt="left" />
+        </button>
+        <button class="right_btn">
+          <img src="img/Vector2.png" alt="right" />
+        </button>
+
+        <div class="card_image">
+          <img src="img/Col-block.png" alt="img" />
+          <img src="img/Col-block2.png" alt="img" />
+          <img src="img/Col-block3.png" alt="img" />
+          <img src="img/Col-block4.png" alt="img" />
+        </div>
+      </section>
+      <!-- section 1 end -->
+
+      <section class="container special">
+        <h2>Special Offer</h2>
+        <img class="line2" src="img/Line 1.png" alt="line" />
+        <p>Check out our special offer and discounts</p>
+        <button class="left_btn_2">
+          <img src="img/Vector.png" alt="left" />
+        </button>
+        <button class="right_btn_2">
+          <img src="img/Vector2.png" alt="left" />
+        </button>
+
+        <div class="cards">
+          <div class="card_lisbon">
+            <img src="img/Image Container.png" alt="img" />
+            <h3>Lisbon, Portugal</h3>
+            <img class="stars_5" src="img/5stars.png" alt="img" />
+            <p class="card_1_info">
+              5 nights and 4 days in 5 star hotel, breakfast and lunch included.
+              Very popular during the renaissance. Passage and going through the
+              cites of the world in classical literature.
+            </p>
+
+            <div class="scene">
+              <p class="from">From<span>€500</span></p>
+              <button class="details">details</button>
+            </div>
+          </div>
+
+          <div class="card_lisbon">
+            <img src="img/Image Container2.png" alt="img" />
+            <h3>Athens, Greece</h3>
+            <img class="stars_5" src="img/5stars.png" alt="img" />
+            <p class="card_1_info">
+              5 nights and 4 days in 5 star hotel, breakfast and lunch included.
+              Very popular during the renaissance. Passage and going through the
+              cites of the world in classical literature.
+            </p>
+
+            <div class="scene">
+              <p class="from">From<span>€800</span></p>
+              <button class="details">details</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="container our">
+        <h2>Our Blog</h2>
+        <img src="img/Line 1.png" alt="line" />
+        <p>An insight the incredible experience in the world</p>
+
+        <div class="our_in">
+          <img src="img/sea.png" alt="img" />
+          <div class="our_info">
+            <h3>
+              Beautiful Italy <br />
+              Let’s travel
+            </h3>
+            <p>
+              But I must explain to you how all this mistaken idea of denouncing
+              pleasure and praising pain was born and I will give you a complete
+              account of the system and expound the actual teachings of the
+              great explorer of the truth, the master- builder of human
+              happiness. No one rejects, dislike, or avoids plasure itself,
+              because it is pleasure, but because those who do not know how to
+              pursue pleasure rationally encounter consequences that are
+              extremly painful. Nor again is there anyone who loves or pursues.
+            </p>
+            <a href="#"
+              >Read More <span><img src="img/Arrow red.png" alt="img" /></span
+            ></a>
+          </div>
+        </div>
+      </section>
+
+      <section class="container trip">
+        <div class="trip_planners">
+          <h2>Trip Planners</h2>
+          <img src="img/Line 1.png" alt="img" />
+          <p>
+            20 years from now you will be more disappointed by the things that
+            you didn’t do. Stop regretting and start travelling, start throwing
+            off the bowlines.
+          </p>
+          <button class="view">View all trip plans</button>
+        </div>
+        <div class="trip_card">
+          <div class="card_1">
+            <img src="img/rome.png" alt="img" />
+
+            <div class="card_1_info">
+              <div class="city">
+                <h4>Guided Tour</h4>
+                <p>€80/Day</p>
+              </div>
+              <h3>Rome City Tour</h3>
+
+              <div class="days">
+                <img src="img/5stars.png" alt="img" />
+                <p>7 Days tour</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="card_1">
+            <img src="img/parish.png" alt="img" />
+
+            <div class="card_1_info">
+              <div class="city">
+                <h4>Guided Tour</h4>
+                <p>€99/Day</p>
+              </div>
+              <h3>Parish City Tour</h3>
+
+              <div class="days">
+                <img src="img/5stars.png" alt="img" />
+                <p>7 Days tour</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="card_1">
+            <img src="img/city 1.png" alt="img" />
+
+            <div class="card_1_info">
+              <div class="city">
+                <h4>Guided Tour</h4>
+                <p>€90/Day</p>
+              </div>
+              <h3>Canada City Tour</h3>
+
+              <div class="days">
+                <img src="img/5stars.png" alt="img" />
+                <p>7 Days tour</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="container destination">
+        <h2>Destination Gallery</h2>
+        <img class="line3" src="img/Line 1.png" alt="img" />
+        <p>Our photo gallery on trip</p>
+
+        <div class="destinations_btns">
+          <button class="left_btn_3">
+            <img src="img/Vector.png" alt="" />
+          </button>
+          <button class="right_btn_3">
+            <img src="img/Vector2.png" alt="" />
+          </button>
+        </div>
+        <div class="destinations_img">
+          <img src="img/man1.png" alt="img" />
+          <img src="img/man2.png" alt="img" />
+          <img src="img/man3.png" alt="img" />
+          <img src="img/man4.png" alt="img" />
+        </div>
+      </section>
+
+      <section class="container travel">
+        <h2>Traveler’s Experiences</h2>
+        <img class="line4" src="img/Line 1.png" alt="line" />
+        <p>Here some awesome feedback from our travelers</p>
+
+        <div class="feedback">
+          <div class="doc">
+            <img class="john_doc" src="img/doc.png" alt="img" />
+            <p>
+              But I must explain to you how all this mistaken idea of denouncing
+              pleasure and praising pain was born and I will give you a complete
+              account of the system and expound the actual teachings of the
+              great explorer of the truth, the master- builder of human
+              happiness.
+            </p>
+            <img class="star2" src="img/5stars.png" alt="img" />
+            <h3>John Doe</h3>
+            <h4>Accountant</h4>
+          </div>
+
+          <div class="doc">
+            <img class="john_doc" src="img/smith.png" alt="img" />
+            <p>
+              But I must explain to you how all this mistaken idea of denouncing
+              pleasure and praising pain was born and I will give you a complete
+              account of the system and expound the actual teachings of the
+              great explorer of the truth, the master- builder of human
+              happiness.
+            </p>
+            <img class="star2" src="img/5stars.png" alt="img" />
+            <h3>John Smith</h3>
+            <h4>Journalist, HWO News</h4>
+          </div>
+        </div>
+
+        <div class="travel_btns">
+          <button class="left_btn_4">
+            <img src="img/Vector.png" alt="img" />
+          </button>
+          <button class="right_btn_4">
+            <img src="img/Vector2.png" alt="img" />
+          </button>
+        </div>
+
+        <div class="newsletter">
+          <div class="newsletter_left">
+            <h2>Our Newsletter</h2>
+          </div>
+
+          <div class="newsletter_right">
+            <p>Email</p>
+            <input type="text" placeholder="Enter your email" />
+            <button class="Subscribe_btn">Subscribe</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="container footer">
+        <div class="footer_main">
+          <div class="footer_logo">
+            <a href="#"><img src="img/Logo.png" alt="logo" /><h2>MedinaWays</h2></a>
+            <p>Copyright © This is us team</p>
+          </div>
+
+          <div class="menu">
+            <h3>Menu</h3>
+            <ul>
+              <a href="#"><li>Home</li></a>
+              <a href="#"><li>Explore</li></a>
+              <a href="#"><li>Travel</li></a>
+              <a href="#"><li>Blog</li></a>
+              <a href="#"><li>Pricing</li></a>
+            </ul>
+          </div>
+
+          <div class="information">
+            <h3>Information</h3>
+            <ul>
+              <a href="#"><li>Destinations</li></a>
+              <a href="#"><li>Supports</li></a>
+              <a href="#"><li>Terms & Conditions</li></a>
+              <a href="#"><li>Privacy</li></a>
+            </ul>
+          </div>
+
+          <div class="contact">
+            <h3>Contact Info</h3>
+            <ul>
+              <a href="#"><li>+998 90 007 91 61</li></a>
+              <a href="#"><li>info@travellian</li></a>
+              <a href="#"><li>1245, New Yourk, USA</li></a>
+            </ul>
+          </div>
+
+          <div class="follow">
+            <h3>Follow us on</h3>
+            <ul>
+              <a href="#"><img src="img/facebook 1.png" alt="img" /></a>
+              <a href="#"><img src="img/instagram 1.png" alt="img" /></a>
+              <a href="#"><img src="img/twitter 1.png" alt="img" /></a>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- <h1>Welcome</h1> -->
+
+
+
+
+
+
+    <script src="js/main.js"></script>
+  </body>
+</html>

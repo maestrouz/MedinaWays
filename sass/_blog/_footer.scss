@@ -1,0 +1,161 @@
+.footer {
+  width: 1515px;
+  height: 577px;
+  background: #172432;
+  padding: 240px 72px 140px 102px;
+  cursor: url("/img/cursor1.png"), auto;
+
+  .footer_main {
+    display: flex;
+    .footer_logo {
+      a{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        font-size: 18px;
+        color: #fff;
+        font-family: "Rubik", sans-serif;
+
+        img{
+          width: 50px;
+        }
+      }
+      cursor: url("/img/click.png"), auto;
+
+      p {
+        margin-top: 16px;
+        color: #fff;
+        font-family: "Rubik", sans-serif;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+      }
+    }
+    .menu {
+      margin-left: 129px;
+      h3 {
+        color: #fff;
+        font-family: "Rubik", sans-serif;
+        font-size: 24px;
+        font-weight: 500;
+        line-height: normal;
+      }
+      a {
+        text-decoration: none;
+      }
+      ul {
+        margin-top: 16px;
+        list-style: none;
+        li {
+          margin-top: 12px;
+          color: #fff;
+          font-family: "Rubik", sans-serif;
+          font-size: 18px;
+          font-weight: 200;
+          line-height: normal;
+          cursor: url("/img/click.png"), auto;
+        }
+      }
+    }
+    .information {
+      margin-left: 120px;
+      h3 {
+        color: #fff;
+        font-family: "Rubik", sans-serif;
+        font-size: 24px;
+        font-weight: 500;
+        line-height: normal;
+      }
+      a {
+        text-decoration: none;
+      }
+      ul {
+        margin-top: 16px;
+        list-style: none;
+        li {
+          margin-top: 12px;
+          color: #fff;
+          font-family: "Rubik", sans-serif;
+          font-size: 18px;
+          font-weight: 200;
+          line-height: normal;
+          cursor: url("/img/click.png"), auto;
+        }
+      }
+    }
+    .contact {
+      margin-left: 120px;
+      h3 {
+        color: #fff;
+        font-family: "Rubik", sans-serif;
+        font-size: 24px;
+        font-weight: 500;
+        line-height: normal;
+      }
+      a {
+        text-decoration: none;
+      }
+      ul {
+        margin-top: 16px;
+        list-style: none;
+        li {
+          margin-top: 12px;
+          color: #fff;
+          font-family: "Rubik", sans-serif;
+          font-size: 18px;
+          font-weight: 200;
+          line-height: normal;
+          cursor: url("/img/click.png"), auto;
+        }
+      }
+    }
+    .follow {
+      margin-left: 100px;
+      //   display: flex;
+      h3 {
+        color: #fff;
+        font-family: "Rubik", sans-serif;
+        font-size: 24px;
+        font-weight: 500;
+        line-height: normal;
+      }
+      ul {
+        margin-top: 15px;
+        display: flex;
+        column-gap: 21px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .footer {
+    position: relative;
+    width: 100%;
+    height: 1071px;
+    top: 1200px;
+    .footer_main {
+      display: flex;
+      flex-direction: column;
+      margin-top: -180px;
+      margin-left: -70px;
+      gap: 60px;
+    }
+    ul {
+      margin-left: -120px;
+    }
+    h3 {
+      margin-left: -120px;
+    }
+    .follow {
+      h3 {
+        margin-left: -100px;
+      }
+      ul {
+        margin-left: -100px;
+      }
+    }
+  }
+}

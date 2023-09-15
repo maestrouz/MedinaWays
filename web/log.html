@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MedinaWays - Log in</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="shortcut icon" href="../img/logo.png">
+</head>
+<body>
+    <main class="register">
+        <section class="registration">
+            <div class="reg__main">
+                <img src="../img/logo.png" alt="">
+                <h1>Log In</h1>
+                <div class="reg__main_inp">
+                    <label for="">UserName:</label>
+                    <input type="text" placeholder="User Name..." id="userName" onclick="change2()">
+                    <label for="">New Password:</label>
+                    <input type="text" placeholder="New Password..." id="psw" onclick="change3()">
+                    <p  id="wrong"></p>
+                    <button id="btn" onclick="checkUser(username.value,psw.value)">
+                        <img src="../img/logo.png" alt="">
+                        Log In Techno
+                    </button>
+                    <a href="./restore_psw.html" id="rst"></a>
+                </div>
+            </div>
+        </section>
+        <section class="reg_slider" id="bg">
+            <div class="black"></div>
+        </section>
+    </main>
+
+
+
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

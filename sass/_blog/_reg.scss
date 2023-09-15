@@ -1,0 +1,193 @@
+.register {
+  width: 1530px;
+  height: 100vh;
+  margin: 0 auto;
+  & .registration {
+    width: 90%;
+    height: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    & .reg__main {
+      width: 40%;
+      height: 80%;
+      padding: 25px 10px;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      backdrop-filter: blur(5px);
+      box-shadow: 0px 0px 15px 2px rgba(0, 0, 0, 0.397);
+      border-radius: 18px;
+      background: url(../../img/wave.svg);
+      background-repeat: no-repeat;
+      background-position: bottom;
+      background-size: 100%;
+      & h1 {
+        font-family: "Wallpoet", cursive;
+        font-style: italic;
+        font-size: 44px;
+        color: #311313;
+        position: absolute;
+        top: 45px;
+        left: 110px;
+        text-shadow: 0px 0px 10px #fff;
+      }
+      & .rst {
+        font-family: "Wallpoet", cursive;
+        font-style: italic;
+        font-size: 34px;
+        color: #311313;
+        position: absolute;
+        top: 45px;
+        left: 110px;
+        text-shadow: 0px 0px 10px #311313;
+      }
+
+      & img {
+        width: 70px;
+        margin-left: 10px;
+      }
+      & .reg__main_inp {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        height: 90%;
+        margin: 0 auto;
+        justify-content: space-around;
+        & label {
+          color: #311313;
+          font-family: "Jost", sans-serif;
+          font-size: 18px;
+          font-weight: 500;
+          letter-spacing: 0.3px;
+          text-shadow: 0px 0px 10px #fff;
+        }
+        & input {
+          width: 90%;
+          height: 40px;
+          padding: 5px 25px;
+          backdrop-filter: blur(10px);
+          background: none;
+          color: #311313;
+          outline: none;
+          font-family: "Jost", sans-serif;
+          font-weight: 600;
+          font-size: 16px;
+          font-style: italic;
+          letter-spacing: 0.5px;
+          border: none;
+          box-shadow: 0px 0px 10px 0px #00000075;
+          text-shadow: 0px 0px 10px #fff;
+          border-radius: 10px;
+          &::placeholder {
+            color: #311313;
+            text-shadow: 0px 0px 10px #fff;
+          }
+        }
+        & p {
+          font-family: "Jost", sans-serif;
+          color: red;
+          text-shadow: 0px 0px 10px #ff0000;
+        }
+        & button {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 45%;
+          height: 50px;
+          font-family: "Jost", sans-serif;
+          font-weight: 600;
+          background: none;
+          border: none;
+          box-shadow: 0px 0px 5px 1px #00000079;
+          border-bottom-left-radius: 50px;
+          border-bottom-right-radius: 50px;
+          color: #311313;
+          cursor: pointer;
+          backdrop-filter: blur(5px);
+          font-size: 16px;
+          gap: 10px;
+          font-style: italic;
+          text-shadow: 0px 0px 10px #fff;
+          transition: ease-in-out 350ms;
+          & img {
+            width: 30px;
+          }
+        }
+        & a {
+          font-family: "Jost", sans-serif;
+          color: gold;
+          text-decoration: none;
+          letter-spacing: 0.5px;
+          position: absolute;
+          top: 474px;
+          left: 348px;
+          text-shadow: 0px 0px 10px #ff0000;
+          padding: 12px 42px;
+          border-bottom-left-radius: 50px;
+          border-bottom-right-radius: 50px;
+          background: none;
+        }
+      }
+    }
+  }
+  & .reg_slider {
+    margin: 0 auto;
+    width: 99%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    overflow: hidden;
+    // filter: blur(5px);
+    background: url(../../img/img_main.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    transition: 0.5s;
+    & .black {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
+@media screen and (max-width: 360px) {
+    .register {
+      width: 100%;
+      .registration {
+        width: 100%;
+        height: 600px;
+        .reg__main {
+          width: 100%;
+          background-size: contain;
+          img {
+            width: 90px;
+            height: 90px;
+          }
+          h1 {
+            font-size: 50px;
+          }
+          .reg__main_inp {
+            input {
+              margin: 0 auto;
+            }
+            label {
+              margin-left: 15px;
+            }
+          }
+        }
+      }
+      #btn {
+        width: 200px;
+        margin: 0 auto;
+        img{
+          margin-left: -10px;
+          width: 50px;
+          height: 50px;
+        }
+      }
+    }
+  }

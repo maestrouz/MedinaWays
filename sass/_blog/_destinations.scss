@@ -1,0 +1,123 @@
+.destination {
+  position: relative;
+  width: 1515px;
+  height: 1080px;
+  cursor: url("/img/cursor1.png"), auto;
+  border: 1px solid #fff;
+  h2 {
+    margin-top: 140px;
+    margin-left: 80px;
+    color: #172432;
+    font-family: "Playfair Display", serif;
+    font-size: 64px;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .line3 {
+    margin-left: 80px;
+    width: 283px;
+    height: 3px;
+  }
+  p {
+    margin-top: 32px;
+    margin-left: 80px;
+    color: #767e86;
+    font-family: "Rubik", sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .destinations_btns {
+    position: absolute;
+    top: 250px;
+    right: 132px;
+    display: flex;
+    column-gap: 40px;
+    .left_btn_3 {
+      width: 60px;
+      height: 66px;
+      border-radius: 12px;
+      background: #172432;
+      border: none;
+      cursor: url("/img/click.png"), auto;
+    }
+    .left_btn_3:hover {
+      background: #ff7757;
+    }
+    .right_btn_3 {
+      width: 60px;
+      height: 66px;
+      border-radius: 12px;
+      background: #172432;
+      border: none;
+      cursor: url("/img/click.png"), auto;
+    }
+    .right_btn_3:hover {
+      background: #ff7757;
+    }
+  }
+  .destinations_img {
+    display: flex;
+    margin-top: 137px;
+    margin-left: 80px;
+    column-gap: 32px;
+    img {
+      width: 300px;
+      height: 500px;
+      cursor: url("/img/click.png"), auto;
+      transition: ease-in-out 350ms;
+    }
+    img:hover {
+      margin-top: -50px;
+      transition: 0.5s;
+    }
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .destination {
+    width: 100%;
+    margin-top: 1400px;
+    h2 {
+      width: 300px;
+      height: 106px;
+      color: #172432;
+      font-family: Playfair Display;
+      font-size: 40px;
+      font-style: normal;
+      font-weight: 400;
+      margin-left: 30px;
+      line-height: normal;
+    }
+    .line3 {
+      margin-left: 30px;
+    }
+    p {
+      color: #767e86;
+      font-family: Rubik;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      margin-left: 30px;
+    }
+    .destinations_btns {
+      margin-top: 1750px;
+      display: none;
+    }
+    .destinations_img {
+      display: flex;
+      flex-direction: column;
+      gap: 60px;
+      img {
+        width: 300px;
+        height: 330px;
+        margin-left: -50px;
+      }
+      img:hover {
+        margin-top: 0px;
+        transition: 0s;
+      }
+    }
+  }
+}
